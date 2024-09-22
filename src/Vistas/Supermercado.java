@@ -376,8 +376,9 @@ private DefaultTableModel modelo = new DefaultTableModel(){
             tfPrecio.setText("" + p.getPrecio());
             jcbRubro.setSelectedItem(p.getCategoria());
             jSpinnerStock.setValue(p.getStock());
+            JOptionPane.showMessageDialog(this, "Hubo una coincidencia.");
         }
-        limpiarCampos(Contenedor);
+       
     }//GEN-LAST:event_jbBuscarActionPerformed
 
     private void jbActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbActualizarActionPerformed
@@ -414,6 +415,7 @@ private DefaultTableModel modelo = new DefaultTableModel(){
         jbGuardar.setEnabled(true);
         Gestion.remover();
         limpiarCampos(Contenedor);
+        filtrar();
 
     }//GEN-LAST:event_jbNuevoActionPerformed
 
