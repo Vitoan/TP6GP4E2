@@ -48,6 +48,9 @@ private DefaultTableModel modelo = new DefaultTableModel(){
         tablaRubro = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Listado por Rubro");
 
